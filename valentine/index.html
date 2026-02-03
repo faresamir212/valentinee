@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Will You Be My Valentine?</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Proposal</title>
   <style>
     body {
-      margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       overflow: hidden;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+
+    .container {
+      text-align: center;
     }
 
     .box {
@@ -21,7 +24,7 @@
       padding: 30px;
       border-radius: 20px;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
@@ -56,15 +59,11 @@
   </style>
 </head>
 <body>
-
   <div class="box">
     <h1>Will you be my Valentine? 💖</h1>
-
     <!-- Image -->
     <img src="images/love.png" alt="Love">
-
     <br>
-
     <button id="yes">Yes 💘</button>
     <button id="no">No 🙄</button>
   </div>
@@ -90,7 +89,6 @@
     // Yes button
     yesBtn.addEventListener("click", () => {
       music.play();
-
       document.body.innerHTML = `
         <div style="
           height:100vh;
@@ -112,6 +110,5 @@
       `;
     });
   </script>
-
 </body>
 </html>
